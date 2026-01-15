@@ -21,7 +21,7 @@ function SearchBar({ onSearch, isLoading }) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search videos by text description..."
+            placeholder="Buscar videos por descripción de texto..."
             className="search-input"
             disabled={isLoading}
           />
@@ -30,7 +30,7 @@ function SearchBar({ onSearch, isLoading }) {
             className="search-button"
             disabled={isLoading || !query.trim()}
           >
-            {isLoading ? '🔄' : '🔍'} Search
+            {isLoading ? '🔄' : '🔍'} Buscar
           </button>
         </div>
         
@@ -42,7 +42,7 @@ function SearchBar({ onSearch, isLoading }) {
               onChange={(e) => setSearchFrames(e.target.checked)}
               disabled={isLoading}
             />
-            <span>Search frames</span>
+            <span>Buscar fotogramas</span>
           </label>
           <label className="checkbox-label">
             <input
@@ -51,7 +51,7 @@ function SearchBar({ onSearch, isLoading }) {
               onChange={(e) => setSearchObjects(e.target.checked)}
               disabled={isLoading}
             />
-            <span>Search objects</span>
+            <span>Buscar objetos</span>
           </label>
         </div>
       </form>

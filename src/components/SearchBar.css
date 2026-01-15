@@ -1,28 +1,32 @@
 .search-bar {
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .search-input-container {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  align-items: stretch;
 }
 
 .search-input {
-  flex: 1;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  transition: border-color 0.3s;
+  flex: 4;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
 .search-input:focus {
   outline: none;
-  border-color: #4CAF50;
+  border-color: #4a4a4a;
 }
 
 .search-input:disabled {
@@ -31,19 +35,23 @@
 }
 
 .search-button {
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-weight: 500;
   color: white;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 8px;
+  background-color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
+  min-width: 80px;
+  box-sizing: border-box;
 }
 
 .search-button:hover:not(:disabled) {
-  background-color: #45a049;
+  background-color: #2c2c2c;
 }
 
 .search-button:disabled {
@@ -53,25 +61,25 @@
 
 .search-options {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 .checkbox-label {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   cursor: pointer;
   user-select: none;
 }
 
 .checkbox-label input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   cursor: pointer;
 }
 
 .checkbox-label span {
-  font-size: 0.95rem;
-  color: #666;
+  font-size: 0.8rem;
+  color: #666666;
 }
