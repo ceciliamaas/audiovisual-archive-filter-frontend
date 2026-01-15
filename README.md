@@ -85,13 +85,3 @@ Environment variables in `.env`:
 
 - `VITE_API_URL` - Backend API URL (default: `http://localhost:8000`)
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-MIT
